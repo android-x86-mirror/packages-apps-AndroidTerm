@@ -30,7 +30,9 @@ LOCAL_PACKAGE_NAME := AndroidTerm
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_JNI_SHARED_LIBRARIES := libjackpal-androidterm2
+LOCAL_REQUIRED_MODULES := libjackpal-androidterm2
+
+LOCAL_OVERRIDES_PACKAGES := ConnectBot
 
 include $(BUILD_PACKAGE)
 
